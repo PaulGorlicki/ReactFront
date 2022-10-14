@@ -56,7 +56,7 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <FaAddressBook size={100} color ="white" relative="path" onClick={() => <Link to="/Login"></Link>}/>
+                    <FaAddressBook size={100} color ="white" href="/Login"/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
