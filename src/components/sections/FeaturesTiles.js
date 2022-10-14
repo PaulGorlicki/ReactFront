@@ -1,7 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
-import Image from '../elements/Image';
+import  { FaAddressBook, FaTrash, FaPencilAlt, FaUserAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -50,25 +51,18 @@ const FeaturesTiles = ({
       <div className="container">
         <div className={innerClasses}>
           <div className={tilesClasses}>
-
+<div>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/laplus.jpg')}
-                      alt="Features tile icon 01"
-                      width={64}
-                      height={64} />
+                    <FaAddressBook size={100} color ="white" relative="path" onClick={() => <Link to="/Login"></Link>}/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Requête 1
+                    Ajouter un contact
                     </h4>
-                  <p className="m-0 text-sm">
-                    Ici on met le truc de la requête hihi
-                    </p>
                 </div>
               </div>
             </div>
@@ -77,42 +71,29 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/laplus.jpg')}
-                      alt="Features tile icon 02"
-                      width={64}
-                      height={64} />
+                    <FaTrash size={100} color="white"/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Requête 2
+                    Supprimer un contact
                     </h4>
-                  <p className="m-0 text-sm">
-                    Yo la team
-                    </p>
                 </div>
               </div>
             </div>
-
+            </div>
+            <div>
             <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/laplus.jpg')}
-                      alt="Features tile icon 03"
-                      width={64}
-                      height={64} />
+                    <FaPencilAlt size={100} color="white"/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Requête 3
+                    Modifier un contact
                     </h4>
-                  <p className="m-0 text-sm">
-                    Trois, three, drei, san 
-                    </p>
                 </div>
               </div>
             </div>
@@ -121,68 +102,17 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/laplus.jpg')}
-                      alt="Features tile icon 04"
-                      width={64}
-                      height={64} />
+                    <FaUserAlt size={100} color="white"/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Requête 4
+                    Trouver un contact
                     </h4>
-                  <p className="m-0 text-sm">
-                    Il en reste 2
-                    </p>
+                    </div>
                 </div>
               </div>
             </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/laplus.jpg')}
-                      alt="Features tile icon 05"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Requête 5
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Est ce qu'on en a vraiment besoin ?
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/laplus.jpg')}
-                      alt="Features tile icon 06"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Requête 6
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Merci à tous c'est enfin fini !
-                    </p>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>

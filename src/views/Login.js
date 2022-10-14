@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import Connexion from "../components/sections/Connexion";
-import Form from '../components/sections/Form';
-
 
 const Login = () => {
     return(
@@ -10,6 +8,5 @@ const Login = () => {
       </>
     );
 }
-
 
 export default Login;

@@ -10,7 +10,7 @@ const defaultProps = {
   ...SectionProps.defaults
 }
 
-const Form = ({
+const Base = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -43,37 +43,23 @@ const Form = ({
     >
       <div className="container-sm">
         <div className={innerClasses}>
-          <div className="form-content">
+          <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-            <form method="post" action="AddContactServlet">
-            <table>
-      <tr>
-				<th><h2>Voici un premier exemple de composant web avec un servlet</h2></th>
-				<tr>
-					<td><i>first name: <input type="text" name="fname" size="25"/></i></td>
-				</tr>
-				<tr>
-					<td><i>last name: <input type="text" name="lname" size="25"/></i></td>
-				</tr>
-				<tr>
-					<td><i>email: <input type="text" name="email" size="25"/></i></td>
-				</tr>
-				
-				<tr>
-					<td><input class="button" type="submit" value="Submit" /><input class="button" type="reset" value="Reset"/></td>
-				</tr>
-			</tr>
-		</table>
-    </form>
+              Page d'accueil pour le projet <span className="text-color-primary">FSR</span>
             </h1>
+            <div className="container-xs">
+              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+                Veuillez vous connecter pour commencer.
+                </p>
             </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
-Form.propTypes = propTypes;
-Form.defaultProps = defaultProps;
+Base.propTypes = propTypes;
+Base.defaultProps = defaultProps;
 
-export default Form;
+export default Base;
