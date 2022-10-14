@@ -9,7 +9,10 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Menu from './views/Menu';
-import Sympa from "./views/Sympa";
+import AddContact from "./views/AddContact";
+import DeleteContact from "./views/DeleteContact";
+import ModifyContact from "./views/ModifyContact";
+import FindContact from "./views/FindContact";
 import Login from "./views/Login";
 import Home from "./views/Home"
 
@@ -39,7 +42,10 @@ const App = () => {
       ref={childRef}
       children={() => (
         <Switch>
-          <AppRoute path="/Sympa" component={Sympa} layout={LayoutDefault} />
+          <AppRoute path="/AddContact" component={AddContact} layout={LayoutDefault} />
+          <AppRoute path="/DeleteContact" component={DeleteContact} layout={LayoutDefault} />
+          <AppRoute path="/ModifyContact" component={ModifyContact} layout={LayoutDefault} />
+          <AppRoute path="/FindContact" component={FindContact} layout={LayoutDefault} />
           <AppRoute path="/Home" component={Home} layout={LayoutDefault} />
           <AppRoute path="/Login" component={Login} layout={LayoutDefault} />
           <AppRoute exact path="/" component={Menu} layout={LayoutDefault} />

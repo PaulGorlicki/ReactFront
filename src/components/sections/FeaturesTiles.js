@@ -48,7 +48,8 @@ const FeaturesTiles = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container">
+
+      <div className="container" style={{ marginTop: '75px' }}>
         <div className={innerClasses}>
           <div className={tilesClasses}>
 <div>
@@ -56,7 +57,9 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <FaAddressBook size={100} color ="white" href="/Login"/>
+                    <Link to="/AddContact">
+                    <FaAddressBook size={100} color ="white"/>
+                    </Link>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -71,7 +74,9 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
+                  <Link to="/DeleteContact">
                     <FaTrash size={100} color="white"/>
+                  </Link>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -87,7 +92,9 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
+                  <Link to="/ModifyContact">
                     <FaPencilAlt size={100} color="white"/>
+                  </Link>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -102,7 +109,9 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
+                  <Link to="/FindContact">
                     <FaUserAlt size={100} color="white"/>
+                    </Link>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
