@@ -4,6 +4,7 @@ import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
 import Sympa from "./views/Sympa";
+import Login from "./views/Login";
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
@@ -38,6 +39,7 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute path="/Sympa" component={Sympa} layout={LayoutDefault} />
+          <AppRoute path="/Login" component={Login} layout={LayoutDefault} />
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
         </Switch>
       )} />
