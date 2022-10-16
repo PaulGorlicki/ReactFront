@@ -40,7 +40,7 @@ const Footer = ({
             
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
-            <div className="footer-copyright">Made by EliteBaby. All right reserved</div>
+            <div className="footer-copyright">Made by Jialei SUN and Paul GORLICKI. All right reserved</div>
           </div>
         </div>
       </div>

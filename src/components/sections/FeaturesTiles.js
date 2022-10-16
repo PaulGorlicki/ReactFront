@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
-import  { FaAddressBook, FaTrash, FaPencilAlt, FaUserAlt } from "react-icons/fa";
+import  { FaAddressBook, FaTrash, FaPencilAlt, FaUserAlt, FaListAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const propTypes = {
@@ -117,6 +117,23 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
                     Trouver un contact
+                    </h4>
+                    </div>
+                </div>
+              </div>
+              
+              <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16">
+                  <Link to="/ListContact">
+                    <FaListAlt size={100} color="white"/>
+                    </Link>
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    La liste des contacts
                     </h4>
                     </div>
                 </div>

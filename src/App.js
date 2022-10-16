@@ -14,7 +14,8 @@ import DeleteContact from "./views/DeleteContact";
 import ModifyContact from "./views/ModifyContact";
 import FindContact from "./views/FindContact";
 import Login from "./views/Login";
-import Home from "./views/Home"
+import Home from "./views/Home";
+import ListContact from "./views/ListContact";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -43,6 +44,7 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute path="/AddContact" component={AddContact} layout={LayoutDefault} />
+          <AppRoute path="/ListContact" component={ListContact} layout={LayoutDefault} />
           <AppRoute path="/DeleteContact" component={DeleteContact} layout={LayoutDefault} />
           <AppRoute path="/ModifyContact" component={ModifyContact} layout={LayoutDefault} />
           <AppRoute path="/FindContact" component={FindContact} layout={LayoutDefault} />

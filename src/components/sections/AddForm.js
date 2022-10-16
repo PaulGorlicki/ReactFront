@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 
@@ -35,7 +35,7 @@ const AddForm = ({
     topDivider && 'has-top-divider',
     bottomDivider && 'has-bottom-divider'
   );
-
+  
   return (
     <section
       {...props}
@@ -45,7 +45,7 @@ const AddForm = ({
         <div className={innerClasses}>
           <div className="form-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-            <form method="post" action="AddContactServlet">
+            <form method="post" action="http://localhost:8080/CarnetContacts/AddContactServlet">
             <table>
       <tr>
 				<th><h2>Voici un premier exemple de composant web avec un servlet</h2></th>
