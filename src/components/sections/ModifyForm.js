@@ -10,7 +10,7 @@ const defaultProps = {
   ...SectionProps.defaults
 }
 
-const DeleteForm = ({
+const ModifyForm = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -74,7 +74,7 @@ const DeleteForm = ({
   );
 }
 
-DeleteForm.propTypes = propTypes;
-DeleteForm.defaultProps = defaultProps;
+ModifyForm.propTypes = propTypes;
+ModifyForm.defaultProps = defaultProps;
 
-export default DeleteForm;
+export default ModifyForm;
